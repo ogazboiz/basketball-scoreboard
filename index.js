@@ -4,11 +4,11 @@ resetScore= document.getElementById("reset")
 count = 0
 function home_one(){
     count = count + 1
-    homeScore.innerText = count
+    homeScore.textContent = count
 }
 function home_two(){
     count = count + 2
-    homeScore.innerText = count
+    homeScore.textContent = count
 }
 function home_three(){
     count = count + 3
