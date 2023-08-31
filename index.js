@@ -1,33 +1,34 @@
-homeScore= document.getElementById("home_score") 
-guestScore= document.getElementById("guest_score")
-resetScore= document.getElementById("reset")
-count = 0
-function home_one(){
-    count = count + 1
-    homeScore.textContent = count
+let homeScore= document.getElementById("home_score") 
+let guestScore= document.getElementById("guest_score")
+let resetScore= document.getElementById("reset")
+let count = 0
+
+function homeOne(){
+    count  +=  1
+    homeScore.innerText= count
 }
-function home_two(){
+function homeTwo(){
     count = count + 2
     homeScore.textContent = count
 }
-function home_three(){
+function homeThree(){
     count = count + 3
-    homeScore.innerText = count
+    homeScore.textContent = count
 }
-function guest_one(){
+function guestOne(){
     count = count + 1
-    guestScore.innerText = count
+    guestScore.textContent = count
 }
-function guest_two(){
+function guestTwo(){
     count = count + 2
-    guestScore.innerText = count
+    guestScore.textContent = count
 }
-function guest_three(){
+function guestThree(){
     count = count + 3
-    guestScore.innerText = count
+    guestScore.textContent = count
 }
 function defaultss() {
     count = 0
-    guestScore.innerText = count
-    homeScore.innerText = count
+    guestScore.textContent = count
+    homeScore.textContent = count
 }
